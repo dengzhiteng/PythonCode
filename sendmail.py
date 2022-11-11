@@ -7,7 +7,7 @@ import requests
 # req.encoding='utf-8'
 # data = req.text
 
-file = open('mail.html', 'r', encoding='utf-8')     # 打开文件
+file = open('./static/mail.html', 'r', encoding='utf-8')     # 打开文件
 data = file.read() # 读取文件内容
 
 sender = "mrdengzhiteng@163.com"
