@@ -167,26 +167,29 @@ print("Good bye!")
 # arr =[x * x for x in range(1, 11) if x % 2 == 0]
 # print(arr)  #[4, 16, 36, 64, 100]
 
-# class
+#open
+# with open('./static/mail.txt',encoding='utf-8') as fo:
+#     ss =fo.read()
+#     print(ss)
 
-class Student():
-    pass
+#zipfile
+import zipfile
+# zf = zipfile.ZipFile("2.zip",'w')
+# zf.write('./static/mail.txt')
+# zf.close()
 
+# 解压 (一直失败)
+# zf=zipfile.ZipFile("2.zip")
+# zf.extractall()
 
+#字符串
+# s1 = '我叫{0},今年{1}岁'.format('小明1',1)
+# print(s1)
+#
+# s2 = '我叫{name},今年{age}岁'.format(name='小明2',age=2)
+# print(s2)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+# print('我是%s,今年%d岁'%('小明',1))
 
 
 

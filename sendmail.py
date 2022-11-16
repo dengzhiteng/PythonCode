@@ -15,8 +15,8 @@ subject = "【python机器人发送的邮件】"
 recverList = ['mrdengzhiteng@163.com']
 
 print("*" * 10, '发送中.....')
-for item in recverList:
-    sendMail.send(sender,item,subject,data,'html')
+for recver in recverList:
+    sendMail.send(sender,recver,subject,data,'html')
 print("*" * 10, f'发送完毕,共发送{len(recverList)}封邮件')
 
 
