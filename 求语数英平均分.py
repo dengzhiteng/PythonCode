@@ -11,6 +11,7 @@ chinese_sheet= wb['语文']
 english_sheet= wb['英语']
 math_sheet= wb['数学']
 class_sheet = wb['班级名单']
+# average_sheet = wb['平均分']
 subs_sheets=[chinese_sheet,english_sheet,math_sheet]
 
 # 获取指定科目成绩
@@ -34,6 +35,7 @@ def getNameList(sheet):
     return list
 
 # 创建 平均分表
+wb.remove("平均分")
 average_sheet = wb.create_sheet("平均分")
 average_sheet.sheet_properties.tabColor = 'ff72BA'
 nameList=getNameList(class_sheet)
@@ -44,7 +46,6 @@ for name in nameList:
     total=0
     for sheet in subs_sheets:
         total +=getScore(sheet,name)
-
     scoreList.append([name,total,'%.2f'% (total/3)])
  # 写入表格中
 for data in scoreList:

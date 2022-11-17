@@ -55,6 +55,6 @@ send_msg = f'''
 now_time = time.strftime('%Y-%m-%d', time.localtime())
 subject = f"【今日天气预报】{now_time}"
 sender = "mrdengzhiteng@163.com"
-recver =["mrdengzhiteng@163.com","492486620@qq.com","767423816@qq.com",'fulunhui_799@163.com']
+recver =["mrdengzhiteng@163.com"]
 sendMail.send(sender, recver, subject, send_msg, 'html')
 time.sleep(2)
