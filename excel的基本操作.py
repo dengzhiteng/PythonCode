@@ -81,21 +81,44 @@ max_col = ws10.max_column
 
 
 # 删除一行 删除合并的行,有点问题
-ws10.delete_rows(1)
+# ws10.delete_rows(1)
+# wb.save(filePath)
+
+
+
+# 获取表格尺寸大小
+# print(ws10.dimensions)
+
+# 使用Excel函数
+ws10["F8"]='=Max(F2:F7)'
+ws10["F9"]='=Min(F2:F7)'
+ws10["F10"]='=AVERAGE(F2:F7)'
+ws10["F11"]='=PRODUCT(F2:F7)'
+ws10["F12"]='=SUM(F2:F7)'
+ws10["F13"]='=COUNT(F2:F7)'
 wb.save(filePath)
 
+# 查看Python支持哪些Excel函数公式
+# from openpyxl.utils import FORMULAE
+# print(FORMULAE)
 
 
+# 删除第1列，第1行
+# sheet.delete_cols(idx=1)
+# sheet.delete_rows(idx=1
 
+# 创建新的表格
+# workbook.create_sheet("新表00")
+# workbook.save(filename = "test.xlsx")
 
+# 删除某个表格
+# sheet=workbook['新表']
+# workbook.remove(sheet)
+# workbook.save(filename = "test.xlsx")
 
-
-
-
-
-
-
-
-
+# 修改某个表格名字
+# sheet=workbook['新表00']
+# sheet.title="新表001"
+# workbook.save(filename = "test.xlsx")
 
 

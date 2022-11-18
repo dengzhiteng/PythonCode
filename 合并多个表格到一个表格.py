@@ -1,7 +1,7 @@
 from openpyxl import load_workbook,Workbook
-import os
+import oslib
 
-listDir = os.listdir('./openpyxl/学科')
+listDir = oslib.listdir('./openpyxl/学科')
 allData = []
 new_wb=Workbook()
 new_ws = new_wb.active

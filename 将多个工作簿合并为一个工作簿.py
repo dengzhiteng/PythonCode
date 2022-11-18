@@ -1,10 +1,10 @@
 from openpyxl import load_workbook,Workbook
-import os
+import oslib
 
 filePath='./openpyxl/成绩汇总.xlsx'
 wb = load_workbook(filePath)
 
-listDir = os.listdir('./openpyxl/学科')
+listDir = oslib.listdir('./openpyxl/学科')
 for fileName in listDir:
     wb1 = load_workbook(f'./openpyxl/学科/{fileName}')
     ws1 = wb1.active
@@ -15,8 +15,5 @@ for fileName in listDir:
             row_data.append(cell.value)
         ws.append(row_data)
 wb.save(filePath)
-
-
-# 12312
 
 

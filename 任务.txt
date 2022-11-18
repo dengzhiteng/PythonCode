@@ -1,2 +1,19 @@
-1 excel ���б�ɫ
-2 ��΢�ŷ�����Ϣ
+requests -网络库
+BeautifulSoup – 低效HTML/ XML处理库，纯Python实现。
+pyspider – 一个强大的爬虫系统。
+lxml – C语言编写高效HTML/ XML处理库。支持XPath。
+xhtml2pdf – 将HTML/CSS转换为PDF
+MarkupSafe – 为XML/HTML/XHTML提供了安全转义的字符串。
+string：通用字符串操作
+re：正则表达式操作
+pinyin
+
+浏览器自动化与仿真
+selenium – 自动化真正的浏览器（Chrome浏览器，火狐浏览器，Opera浏览器，IE浏览器）。
+
+Django是一个开源的Web应用框架，
+
+burpsuite
+
+
+
